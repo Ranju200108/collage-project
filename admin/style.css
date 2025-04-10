@@ -1,0 +1,28 @@
+body{
+    overflow-x: hidden;
+}
+
+.nav {
+     background-color:rgb(241, 174, 5);
+    
+     position: fixed;
+     top: 0;
+     z-index: 99;
+     width: 100%;
+}
+ .main-seection{
+    margin-top:126px;
+}
+.carousel-item img
+{
+    height:300px;
+}
+.nav-item{
+  font-weight:bold;
+}
+.navbar-nav{
+    padding-left:320px;
+}
+#navbarNavDropdown{
+    padding-left:120px;
+}
