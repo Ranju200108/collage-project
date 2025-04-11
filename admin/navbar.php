@@ -18,34 +18,12 @@
             
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="container">About Us</a>
-        </li>
+        
         <li class="nav-item">
           <a class="nav-link" href="category.php">Category</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            My collection
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Necklesh</a></li>
-            <li><a class="dropdown-item" href="#">Ring</a></li>
-            <li><a class="dropdown-item" href="#">Ghumka</a></li>
-            <li><a class="dropdown-item" href="#">Chain</a></li>
-            <li><a class="dropdown-item" href="#">Nosepin</a></li>
-            <li><a class="dropdown-item" href="#">earing</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Purchase
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Online</a></li>
-            <li><a class="dropdown-item" href="#">Offline</a></li>
-          </ul>
-        </li>
+        
+        
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="orders.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Orders
@@ -58,23 +36,13 @@
           </ul>
         </li>
        
-        
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        My account
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Orders</a></li>
-            <li><a class="dropdown-item" href="#">Account details</a></li>
-          </ul>
-        </li>
         <li class="nav-item">
           <a class="nav-link" href="changepassword.php">Change Password</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Logout</a>
         </li>
-      <li class="nav-item dropdown">
+      <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           <i class="ri-user-fill"></i>
           </a>
@@ -84,7 +52,7 @@
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>
-        
+         -->
         </ul>
     </div>
   </div>

@@ -15,7 +15,7 @@ include "config.php";
 <input type="search" name="search" placeholder="Search...">
 <i class="ri-search-line"></i>
 
-<input type="submit" value="Submit" class="btn btn-primary">
+<input type="submit" value="Submit" class="btn btn-danger">
 </form>
     <!-- <form action="" method="POST">
         <input type="search" name="search">

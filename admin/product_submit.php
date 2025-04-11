@@ -27,8 +27,15 @@ if(isset($_SESSION['admin'])){
   $sql = "INSERT into product(name,brand,price,sellingprice,category,description,image) VALUES
 ('$name','$brand','$price','$sellingprice','$category','$description','$newfilename1')";
 $query = mysqli_query($con, $sql);
-if($query){
-    echo "success";
+if($query)
+{
+  ?>
+  <script>
+    alert("sucessfully added");
+    history.go(-1);
+  </script>
+  <?php
+  // echo "success";
 }
 else{
     echo "error";

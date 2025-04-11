@@ -22,7 +22,7 @@ body {
 .col-md-12 {
     width: 98.5vw;
     padding: 20px;
-    background-color:rgb(143, 107, 31);
+    background-color:rgb(255, 203, 91);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
@@ -54,13 +54,13 @@ input.form-control, select.form-control, textarea.form-control {
 
 input.form-control:focus, select.form-control:focus, textarea.form-control:focus {
     border-color: #007bff;
-    background-color: #fff;
+    border-color:rgb(69, 13, 3);
     outline: none;
 }
 
 .d-grid .btn {
     padding: 12px;
-    background-color: #007bff;
+    border-color:rgb(69, 13, 3);
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -70,7 +70,7 @@ input.form-control:focus, select.form-control:focus, textarea.form-control:focus
 }
 
 .d-grid .btn:hover {
-    background-color: #0056b3;
+    border-color:rgb(30, 6, 1);
 }
 
 select.form-control {
@@ -174,7 +174,7 @@ include "navbar.php";
     <div class="d-grid gap-2">
  
  <!-- <button class="btn btn-primary" type="button">Button</button> -->
-  <input type="submit" class="btn btn-primary" value="Add Product">
+  <input type="submit" class="btn btn-danger" value="Add Product">
  
  </div> 
 

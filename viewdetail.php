@@ -38,8 +38,8 @@
                     <p>Discount:<?=$dis?>%<p>
                     <p>Our Price:<?=$row['sellingprice']?></p>
                     <p>Description:<?=$row['description']?></p>
-                    <a href="addcart.php?id=<?=$row['id']?>" class="btn btn-primary">Add to Cart</a>
-                    <a href="#" class="btn btn-primary">View detail</a>
+                    <a href="addcart.php?id=<?=$row['id']?>" class="btn btn-danger">Add to Cart</a>
+                    <!-- <a href="#" class="btn btn-primary">View detail</a> -->
 
 
 </div>

@@ -119,7 +119,7 @@ session_start();
             if(isset($_SESSION['user'])){
             ?>
           <li class="nav-item">
-           <a  href="logout.php" class="card-link btn btn-primary" style="float:right">Logout</a>
+           <a  href="logout.php" class="card-link btn btn-danger" style="float:right">Logout</a>
           </li>
           <?php
             }

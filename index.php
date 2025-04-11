@@ -39,7 +39,7 @@ include "config.php";
     <div class="container">
         <div class="row">
         <?php
-  $sql1= "select * from product";
+  $sql1= "select * from product order by category";
   $query=mysqli_query($con ,$sql1);
   while($row=mysqli_fetch_array($query)){
  
@@ -57,9 +57,9 @@ include "config.php";
                 <div class="card-body">
                         <h5 class="card-title"><?=$row['name']?></h5>
                         <p><?=$row['brand']?></p>
-                        <p class="card-text"> <s>र <?=$row['price']?></s> <?=$row['sellingprice']?> Discount:<?=$dis?>%</p>
-                        <a href="#" class="btn btn-primary">Add to Cart</a>
-                        <a href="viewdetail.php?id=<?=$row['id']?>" class="btn btn-primary">View detail</a>
+                        <p class="card-text"> <s>&#8377;  <?=$row['price']?></s> &#8377; <?=$row['sellingprice']?><br> Discount:<?=$dis?>%</p>
+                        <a href="addcart.php" class="btn btn-danger"><i class="ri-shopping-cart-2-line"></i></a>
+                        <a href="viewdetail.php?id=<?=$row['id']?>" class="btn btn-danger">View </a>
                     </div>
                 </div>
             </div>

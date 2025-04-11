@@ -20,6 +20,9 @@ include "head.php";
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
+        strong{
+            margin-left:60%;
+        }
         h1 {
             color: #8b4c8b;
             font-size: 36px;
