@@ -49,7 +49,7 @@ $search = $_POST['search'];
         <p class="card-text ">
             <s> Rs. <?=$row['price']?></s>  <?=$dis?>%off<br>Rs. <?=$row['sellingprice']?></p>
         
-    <a href="viewdetail.php?id=<?=$row['id']?>"  class="card-link btn btn-primary"> Veiw More</a>
+    <a href="viewdetail.php?id=<?=$row['id']?>"  class="card-link btn btn-danger"> Veiw More</a>
     <?php 
     if(isset($_SESSION['user'])){
       $email=$_SESSION['user'];
@@ -64,14 +64,14 @@ $search = $_POST['search'];
     $count=mysqli_num_rows($query3);
     if($count==0){
       ?>
-<a href="addcart.php?id=<?=$row['id']?>" class="card-link btn btn-primary">Add Cart</a>
+<a href="addcart.php?id=<?=$row['id']?>" class="card-link btn btn-danger">Add Cart</a>
 
       <?php
     }
   else{
 ?>
 
-<a href="viewcart.php" class="card-link btn btn-primary">View Cart</a>
+<a href="viewcart.php" class="card-link btn btn-danger">View Cart</a>
 
 
 <?php
@@ -79,7 +79,7 @@ $search = $_POST['search'];
     }
     else{
       ?>
-<a href="addcart.php?id=<?=$row['id']?>" class="card-link btn btn-primary">Add Cart</a>
+<a href="addcart.php?id=<?=$row['id']?>" class="card-link btn btn-danger">Add Cart</a>
       
       <?php
     }

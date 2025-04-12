@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 if(isset($_SESSION['admin'])){
 
@@ -45,7 +46,7 @@ if(isset($_SESSION['admin'])){
             <?php
            
           
-             $sql1="select * from orders where status='' order by id desc ";
+             $sql1="select * from orders where status='Placed' order by id desc ";
            $query1= mysqli_query($con, $sql1);
            while($row1=mysqli_fetch_array($query1)){
            $pid=$row1['pid'];
@@ -65,7 +66,7 @@ if(isset($_SESSION['admin'])){
             <td><?=$row1['date']?></td>
             <td><?=$row1['address']?></td>
             <td>        
-            <form  action="orders-submit.php" method="POST">
+            <!-- <form  action="orders-submit.php" method="POST">
             <div class="mb-3">
                <input type="hidden" name="id" value="<?=$row1['id']?>">
                 <select name="status" id=""  class="form-control" required>
@@ -83,6 +84,41 @@ if(isset($_SESSION['admin'])){
               </div>
           
             </form>
+             -->
+            <p id="return"></p>
+             <form  id="ajaxdata">
+            <div class="mb-3">
+               <input type="hidden" name="id" value="<?=$row1['id']?>">
+                <select name="status" id=""  class="form-control" required>
+             <option value="">Select Status</option>
+             <option value="placed">placed</option>
+             <option value="Confirm">Confirm</option>
+             <option value="Delivery">Delivery</option>
+             <option value="Cancelled">Cancelled</option>
+                </select>
+            </div>
+                <div class="d-grid gap-2">
+ 
+              <input type="submit" class="btn btn-primary" value="submit">
+ 
+              </div>
+          
+            </form>
+            <script>
+   $("#ajaxdata").on("submit", function(e) {
+    e.preventDefault(); // prevent page refresh
+    console.log("h");
+    $.ajax({
+        url: "orders-submit.php",
+        type: "POST",
+        data: $(this).serialize(),
+        success: function(response) {
+            $("#return").text(response);
+        }
+    });
+});
+
+</script>
             
             </td>
            

@@ -58,7 +58,7 @@ include "config.php";
                         <h5 class="card-title"><?=$row['name']?></h5>
                         <p><?=$row['brand']?></p>
                         <p class="card-text"> <s>&#8377;  <?=$row['price']?></s> &#8377; <?=$row['sellingprice']?><br> Discount:<?=$dis?>%</p>
-                        <a href="addcart.php" class="btn btn-danger"><i class="ri-shopping-cart-2-line"></i></a>
+                        <a href="addcart.php?id=<?=$row['id']?>" class="btn btn-danger"><i class="ri-shopping-cart-2-line"></i></a>
                         <a href="viewdetail.php?id=<?=$row['id']?>" class="btn btn-danger">View </a>
                     </div>
                 </div>
