@@ -15,11 +15,13 @@ if(isset($_SESSION['user'])){
     <style>
         form{
             margin-top:150px;
-            margin-left:50px;
-            margin-right:1000px;
+            margin-left:60px;
             background-color:darkgoldenrod;
             border-radius: 25px;
-
+            width: 40%;
+        }
+        .form-control {
+            width: 88%;
         }
         textarea{
             height:100px;

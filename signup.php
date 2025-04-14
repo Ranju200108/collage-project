@@ -27,7 +27,7 @@ include "head.php";
     margin-bottom: 20px;
   }
 form {
-    margin-left: 13%;
+    /* margin-left: 13%; */
     display: flex;
     flex-direction: column;
 }

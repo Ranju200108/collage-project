@@ -40,7 +40,7 @@
           <a class="nav-link" href="changepassword.php">Change Password</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Logout</a>
+          <a class="nav-link" href="logoutb.php">Logout</a>
         </li>
       <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
