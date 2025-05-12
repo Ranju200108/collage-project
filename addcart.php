@@ -20,7 +20,7 @@ if(isset($_SESSION['user'])){
  
  if($count <= 0){
 
-    $sql1 ="insert into cart(pid,uid,date,qty) values('$pid','$uid','$date','1')";
+    $sql1 ="insert into cart(pid,uid,date,qty) values('$pid','$uid','$date','2')";
     
     $query1= mysqli_query($con, $sql1);
     if($query1){
